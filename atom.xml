@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mrtanweijie.github.io/"/>
-  <updated>2016-08-11T07:21:33.000Z</updated>
+  <updated>2016-08-11T08:21:23.000Z</updated>
   <id>https://mrtanweijie.github.io/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo常用命令</title>
+    <link href="https://mrtanweijie.github.io/2016/08/11/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>https://mrtanweijie.github.io/2016/08/11/Hexo常用命令/</id>
+    <published>2016-08-11T08:20:44.000Z</published>
+    <updated>2016-08-11T08:21:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.hexo n == hexo new<br>2.hexo g == hexo generate<br>3.hexo s == hexo server<br>4.hexo d == hexo deploy</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1.hexo n == hexo new&lt;br&gt;2.hexo g == hexo generate&lt;br&gt;3.hexo s == hexo server&lt;br&gt;4.hexo d == hexo deploy&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
