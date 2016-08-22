@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mrtanweijie.github.io/"/>
-  <updated>2016-08-11T08:21:23.000Z</updated>
+  <updated>2016-08-22T12:43:59.000Z</updated>
   <id>https://mrtanweijie.github.io/</id>
   
   <author>
@@ -16,19 +16,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo常用命令</title>
-    <link href="https://mrtanweijie.github.io/2016/08/11/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>https://mrtanweijie.github.io/2016/08/11/Hexo常用命令/</id>
-    <published>2016-08-11T08:20:44.000Z</published>
-    <updated>2016-08-11T08:21:23.000Z</updated>
+    <title>工作两年接触过和使用的技术</title>
+    <link href="https://mrtanweijie.github.io/2016/08/22/%E5%B7%A5%E4%BD%9C%E4%B8%A4%E5%B9%B4%E6%8E%A5%E8%A7%A6%E8%BF%87%E5%92%8C%E4%BD%BF%E7%94%A8%E7%9A%84%E6%8A%80%E6%9C%AF/"/>
+    <id>https://mrtanweijie.github.io/2016/08/22/工作两年接触过和使用的技术/</id>
+    <published>2016-08-22T10:51:15.000Z</published>
+    <updated>2016-08-22T12:43:59.000Z</updated>
     
-    <content type="html"><![CDATA[<p>1.hexo n == hexo new<br>2.hexo g == hexo generate<br>3.hexo s == hexo server<br>4.hexo d == hexo deploy</p>
+    <content type="html"><![CDATA[<p>14年毕业，一下子就工作两年。</p>
+<p>工作到现在感觉到了一个小瓶颈，最近技术上的提升比较少。</p>
+<p>工作说白了就是一直在写着业务，提升最大的阶段是刚工作的第一年，工作第二年基本是熟练和深入一些了解前一年来和大学自己学到的东西。</p>
+<p>最近也在接触学习一些新的东西。</p>
+<p>工作两年使用到到技术大体如下，开发的时候使用的基本都是一些比较普通的技术，没有什么分布式、集群之类高大上的关键字：</p>
+<p>后台开发语言：<code>java</code></p>
+<p>模板引擎：<code>Velocity</code></p>
+<p>前端技术：<code>JS/JQuery</code>、<code>AngularJS</code>、<code>HTML/LESS／CSS</code>、<code>Grunt</code>、<code>Gulp</code></p>
+<h3 id="1、Java应用场景"><a href="#1、Java应用场景" class="headerlink" title="1、Java应用场景"></a>1、Java应用场景</h3><p>后台的业务处理、空指针判断和dbutils数据库查询，SQL编写，剔除页面及其他复杂的SQL最终主要写了三个：</p>
+<p>（1）对象ID列表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">SELECT `id` XXX；</div></pre></td></tr></table></figure>
+<p>（2）统计<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">SELECT COUNT(`id`) XXX；</div></pre></td></tr></table></figure></p>
+<h3 id="2、Velocity"><a href="#2、Velocity" class="headerlink" title="2、Velocity"></a>2、Velocity</h3><p>页面主要使用Velocity作为数据模版引擎，使用最多的velocity-toolbox。toolbox好处有不少，坏处也很多，比如在VM模板上面有很多逻辑。</p>
+<h3 id="3、javascript"><a href="#3、javascript" class="headerlink" title="3、javascript"></a>3、javascript</h3><p>基本一个功能java代码和JS代码的比例是1:3或者更多，不管你信不信，反正我是信了；JQuery事件、AJAX处理和DOM操作；有用过一下AngularJS，不过用得不好。</p>
+<h3 id="4、HTML-CSS"><a href="#4、HTML-CSS" class="headerlink" title="4、HTML/CSS"></a>4、HTML/CSS</h3><p>主要写一些简单的、基本的样式布局，大体上是由专业前端来写的</p>
+<h3 id="5、缓存"><a href="#5、缓存" class="headerlink" title="5、缓存"></a>5、缓存</h3><p>缓存使用了<code>J2Cache</code>，因为一些基础的方法都是封装好了的</p>
+<p>项目地址［Git@OSC］<a href="http://git.oschina.net/ld/J2Cache" target="_blank" rel="external">http://git.oschina.net/ld/J2Cache</a></p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>Node</p>
+<p>最近在学<code>NodeJS</code>， 怎么说，很喜欢<code>Node</code>。</p>
+<p>Mongo</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;1.hexo n == hexo new&lt;br&gt;2.hexo g == hexo generate&lt;br&gt;3.hexo s == hexo server&lt;br&gt;4.hexo d == hexo deploy&lt;/p&gt;
-
+      &lt;p&gt;14年毕业，一下子就工作两年。&lt;/p&gt;
+&lt;p&gt;工作到现在感觉到了一个小瓶颈，最近技术上的提升比较少。&lt;/p&gt;
+&lt;p&gt;工作说白了就是一直在写着业务，提升最大的阶段是刚工作的第一年，工作第二年基本是熟练和深入一些了解前一年来和大学自己学到的东西。&lt;/p&gt;
+&lt;p&gt;最近也在接触学习
     
     </summary>
     
@@ -36,29 +57,29 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://mrtanweijie.github.io/2016/08/11/hello-world/"/>
-    <id>https://mrtanweijie.github.io/2016/08/11/hello-world/</id>
-    <published>2016-08-11T07:21:33.000Z</published>
-    <updated>2016-08-11T07:21:33.000Z</updated>
+    <title>Hexo常用命令</title>
+    <link href="https://mrtanweijie.github.io/2016/08/11/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>https://mrtanweijie.github.io/2016/08/11/Hexo常用命令/</id>
+    <published>2016-08-11T08:20:44.000Z</published>
+    <updated>2016-08-22T10:52:46.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <content type="html"><![CDATA[<p>新建blog</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo n == hexo new</div></pre></td></tr></table></figure>
+<p>生成静态文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g == hexo generate</div></pre></td></tr></table></figure>
+<p>server<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s == hexo server</div></pre></td></tr></table></figure></p>
+<p>部署<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d == hexo deploy</div></pre></td></tr></table></figure></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;新建blog&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;d
     
     </summary>
     
+    
+      <category term="hexo" scheme="https://mrtanweijie.github.io/tags/hexo/"/>
     
   </entry>
   
