@@ -1,27 +1,32 @@
 <!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 作为一个普通的java程序员工作两年接触过和使用的技术 · 小檀－I have a dream.</title><meta name="description" content="作为一个普通的java程序员工作两年接触过和使用的技术 - Mr_Tank_"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://mrtanweijie.github.io/atom.xml" title="小檀－I have a dream."></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/474481263" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/mrtanweijie" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">作为一个普通的java程序员工作两年接触过和使用的技术</h1><div class="post-info">2016年8月22日</div><div class="post-content"><p>14年毕业，一下子就工作两年。</p>
 <p>工作到现在感觉到了一个小瓶颈，最近技术上的提升比较少。</p>
-<p>工作说白了就是一直在写着业务，提升最大的阶段是刚工作的第一年，工作第二年基本是熟练和深入一些了解前一年来和大学自己学到的东西。</p>
+<p>我所在的互联网公司工作大部分时间是在写业务逻辑，提升最大的阶段是刚工作的第一年，工作第二年基本是熟练和深入一些了解前一年来和大学自己学到的东西。</p>
 <p>最近也在接触学习一些新的东西。</p>
 <p>工作两年使用到到技术大体如下，开发的时候使用的基本都是一些比较普通的技术，没有什么分布式、集群之类高大上的关键字：</p>
-<p>后台开发语言：<code>java</code></p>
+<p>后台开发语言：<code>Java</code></p>
 <p>模板引擎：<code>Velocity</code></p>
-<p>前端技术：<code>JS/JQuery</code>、<code>AngularJS</code>、<code>HTML/LESS／CSS</code>、<code>Grunt</code>、<code>Gulp</code></p>
+<p>前端技术：<code>JS/JQuery</code>、<code>AngularJS</code>、<code>HTML／CSS／LESS</code>、<code>Grunt</code>、<code>Gulp</code></p>
 <p>代码托管：<code>SVN</code>、<code>GIT</code></p>
-<h3 id="1、Java应用场景"><a href="#1、Java应用场景" class="headerlink" title="1、Java应用场景"></a>1、Java应用场景</h3><p>后台的业务处理、空指针判断和dbutils数据库查询，SQL编写，剔除页面及其他复杂的SQL最终主要写了三个：</p>
+<h3 id="1、Java应用场景"><a href="#1、Java应用场景" class="headerlink" title="1、Java应用场景"></a>1、Java应用场景</h3><p>在公司开发使用的是内部封装的一个框架，简单轻巧。总得来说用java来实现后台的业务处理、五行一个的空指针判断和在鄙视完Hibernate后自己封装Dbutils造的轮子ORM工具类。</p>
+<p>使用<code>Lucene</code>优化搜索，<code>Lucene</code>是大学的时候就接触学习的，毕业设计还用到了，当然只是简单地封装使用。有很多封装Lucene的完整框架，比如solr和ES。</p>
+<p>SQL编写，剔除页面及其他复杂的逻辑，归根到底SQL最终主要写了两个查询：</p>
 <p>（1）对象ID列表</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">SELECT `id` XXX；</div></pre></td></tr></table></figure>
 <p>（2）统计<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">SELECT COUNT(`id`) XXX；</div></pre></td></tr></table></figure></p>
-<p>一些优化经验：Explain和索引</p>
+<p>一些优化经验：简单，经常Explain、是否有索引。</p>
+<p>java程序员就是喜欢<code>封装</code>。</p>
 <h3 id="2、Velocity"><a href="#2、Velocity" class="headerlink" title="2、Velocity"></a>2、Velocity</h3><p>页面主要使用Velocity作为数据模版引擎，使用最多的velocity-toolbox。toolbox好处有不少，坏处也很多，比如在VM模板上面有很多逻辑。</p>
-<h3 id="3、javascript"><a href="#3、javascript" class="headerlink" title="3、javascript"></a>3、javascript</h3><p>基本一个功能java代码和JS代码的比例是1:3或者更多，不管你信不信，反正我是信了；JQuery事件、AJAX处理和DOM操作；有用过一下AngularJS，不过用得不好。</p>
+<h3 id="3、javascript"><a href="#3、javascript" class="headerlink" title="3、javascript"></a>3、javascript</h3><p>基本一个功能java代码和JS代码的比例是1:3或者更多，不管你信不信，反正我是信了；JQuery事件、AJAX处理和DOM操作；有用过一下AngularJS，不过用得不好。额，好吧，NG还有使用失败的经验。</p>
 <p>最近公司前端使用<code>Gulp</code>对公司几个项目的前端资源进行统一的工程化整理，感觉非常的厉害，所以自己也花了不少时间去研究学习。</p>
 <p>ES6很多特性都非常的喜欢，不过现在还只有在写NodeJS的时候用到。</p>
 <h3 id="4、HTML-CSS"><a href="#4、HTML-CSS" class="headerlink" title="4、HTML/CSS"></a>4、HTML/CSS</h3><p>主要写一些简单的、基本的样式布局，大体上是由专业前端来写的</p>
 <h3 id="5、缓存"><a href="#5、缓存" class="headerlink" title="5、缓存"></a>5、缓存</h3><p>缓存使用了<code>J2Cache</code>，因为一些基础的方法都是封装好了的</p>
 <p>项目地址［Git@OSC］<a href="http://git.oschina.net/ld/J2Cache" target="_blank" rel="external">http://git.oschina.net/ld/J2Cache</a></p>
-<h3 id="6、代码托管"><a href="#6、代码托管" class="headerlink" title="6、代码托管"></a>6、代码托管</h3><p>一开始组内只有几个人做开发，第一年在公司内部使用的还是SVN。但是后面人越来越多，业务越来越多就感觉有些使用上的问题了，所以在16年年初的时候全面切换到Git。因为公司<br>有自己的代码托管服务 git.oschina.net，所以就很方便地切换过来了。一开始使用<code>Git</code>的时候还遇到一些问题，但是一周之后就解放了，经过一段时间的实践再根据Git组的建议，现在使用<br>fork项目PR模式进行开发，非常方便。</p>
+<h3 id="6、代码托管"><a href="#6、代码托管" class="headerlink" title="6、代码托管"></a>6、代码托管</h3><p>一开始组内只有几个人做开发，第一年在公司内部使用的还是<code>SVN</code>。但是后面人越来越多，业务越来越多就感觉有些使用上的问题了，所以在16年年初的时候全面切换到Git。因为公司<br>有自己的代码托管服务 git.oschina.net，所以就很方便地切换过来了。一开始使用<code>Git</code>的时候还遇到一些问题，但是一周之后就解放了，经过一段时间的实践再根据Git组的建议，现在使用<br>fork项目PR模式进行开发，非常方便。</p>
 <h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>Node</p>
 <p>最近在学<code>NodeJS</code>， 怎么说，很喜欢<code>Node</code>。</p>
 <p>Mongo</p>
-<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>正如标题写的那样，我是一个普通的程序员，我掌握的技术没什么过人之处，但也不要鄙视我，我跟大神们有很大的差距，但是跟你的差距只有3个月［哈，逃～］。</p>
-</div></article></div></section><footer><div class="paginator"><a href="/2016/08/11/Hexo常用命令/" class="next">NEXT</a></div><div class="copyright"><p>© 2016 <a href="https://mrtanweijie.github.io">Mr_Tank_</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
+<p>看到自带聚合的时候我就开始膜拜了。</p>
+<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>正如标题写的那样，我是一个普通的程序员，喜欢看电影喜欢各种幻想，我掌握的技术没什么过人之处，当不懂的人说我厉害的时候，我其实是很心虚的，没啥的就是几个ifelse嘛，其实你也可以的。</p>
+<p>当然，同行们但也不要太过于鄙视我，我跟大神们有很大的差距，但是跟你的差距只有3个月［哈，别打我，逃～］。</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/08/11/Hexo常用命令/" class="next">下一篇</a></div><div class="copyright"><p>© 2016 <a href="https://mrtanweijie.github.io">Mr_Tank_</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
