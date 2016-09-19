@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mrtanweijie.github.io/"/>
-  <updated>2016-08-24T08:58:39.000Z</updated>
+  <updated>2016-09-19T06:29:49.000Z</updated>
   <id>https://mrtanweijie.github.io/</id>
   
   <author>
@@ -14,6 +14,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vagrant 常用命令</title>
+    <link href="https://mrtanweijie.github.io/2016/09/19/vagrant%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>https://mrtanweijie.github.io/2016/09/19/vagrant 常用命令/</id>
+    <published>2016-09-19T06:03:13.000Z</published>
+    <updated>2016-09-19T06:29:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Vagrant安装非常简单，Mac直接到官网下载dmg文件安装就可以了，虚拟机选择：VirtualBox</p>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h3 id="添加镜像"><a href="#添加镜像" class="headerlink" title="添加镜像"></a>添加镜像</h3><p>可以在<a href="https://atlas.hashicorp.com/boxes/search?provider=virtualbox&amp;utm_source=vagrantcloud.com&amp;vagrantcloud=1" target="_blank" rel="external">这里</a>找到你想要的镜像</p>
+<p>镜像下载需要一段时间，下载前需要选择虚拟机，我用的是VirtualBox，所以选择2</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vagrant add [镜像]</div></pre></td></tr></table></figure>
+<p><img src="./../img/QQ20160919-0.png" alt=""></p>
+<h3 id="选择镜像初始化开发目录"><a href="#选择镜像初始化开发目录" class="headerlink" title="选择镜像初始化开发目录"></a>选择镜像初始化开发目录</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vagrant init</div></pre></td></tr></table></figure>
+<p><img src="./../img/QQ20160919-1.png" alt=""></p>
+<h3 id="启动虚拟机"><a href="#启动虚拟机" class="headerlink" title="启动虚拟机"></a>启动虚拟机</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vagrant up</div></pre></td></tr></table></figure>
+<p><img src="./../img/QQ20160919-2.png" alt=""></p>
+<h3 id="关闭虚拟机"><a href="#关闭虚拟机" class="headerlink" title="关闭虚拟机"></a>关闭虚拟机</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vagrant halt</div></pre></td></tr></table></figure>
+<h3 id="重启虚拟机"><a href="#重启虚拟机" class="headerlink" title="重启虚拟机"></a>重启虚拟机</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vagrant reload</div></pre></td></tr></table></figure>
+<h3 id="SSH-至虚拟机"><a href="#SSH-至虚拟机" class="headerlink" title="SSH 至虚拟机"></a>SSH 至虚拟机</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vagrant ssh</div></pre></td></tr></table></figure>
+<p><img src="./../img/QQ20160919-3.png" alt=""></p>
+<h3 id="查看虚拟机运行状态"><a href="#查看虚拟机运行状态" class="headerlink" title="查看虚拟机运行状态"></a>查看虚拟机运行状态</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vagrant status</div></pre></td></tr></table></figure>
+<p><img src="./../img/QQ20160919-5.png" alt=""></p>
+<h3 id="销毁当前虚拟机"><a href="#销毁当前虚拟机" class="headerlink" title="销毁当前虚拟机"></a>销毁当前虚拟机</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vagrant destroy</div></pre></td></tr></table></figure>
+<h3 id="查看镜像列表"><a href="#查看镜像列表" class="headerlink" title="查看镜像列表"></a>查看镜像列表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vagrant box list</div></pre></td></tr></table></figure>
+<p><img src="./../img/QQ20160919-4.png" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Vagrant安装非常简单，Mac直接到官网下载dmg文件安装就可以了，虚拟机选择：VirtualBox&lt;/p&gt;
+&lt;h2 id=&quot;常用命令&quot;&gt;&lt;a href=&quot;#常用命令&quot; class=&quot;headerlink&quot; title=&quot;常用命令&quot;&gt;&lt;/a&gt;常用命令&lt;/h2&gt;&lt;h3 i
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Mac上安装MongoDB</title>
